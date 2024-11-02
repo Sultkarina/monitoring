@@ -1,7 +1,7 @@
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Sidebar from './components/Sidebar/Sidebar';
 import styles from './App.module.scss';
-import Analytics from './components/Sidebar/analytics';
+import Analytics from './components/Sidebar/Analytics';
 
 const Fakecheker = () => <div>Фейкчекер</div>;
 const PersonalTapes = () => <div>Персональные ленты</div>;

@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import Profile from './Profile';
-import NavItem from './NavItem';
+import NavItem from './Navitem';
 import styles from './Sidebar.module.scss';
 
 const Sidebar: React.FC = () => {
