@@ -3,11 +3,14 @@
   width: 200px;
   transition: width 0.3s;
   background-color: #F8F8FB;
+  
 
   &.collapsed {
       width: 70px;
   }
 
+ 
+   
 
 
     .toggleButton {
@@ -31,10 +34,9 @@
       .nav {
       display: flex;
       flex-direction: column;
-      gap:40px;
-      padding-left: 25px;
-      padding-right: 40px;
-    }
+      gap:0px;
+      }
+    
     
   
 }

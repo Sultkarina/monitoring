@@ -6,31 +6,9 @@
   font-family: "Nunito Sans";
   font-size: 12px;
   font-weight: 700;
-  line-height: 20px; 
-  height: 20px; 
-
-  &:hover {
-      color: #007bff;
-      text-decoration: none;
-  }
-
-  .icon {
-    margin-right: 20px;     
-    width: 20px;            
-    height: 20px;           
-    display: inline-block;   
-    fill: #C1C8D7;          
-}
-.link {
-  display: flex;
-  align-items: center;
-  color: #949FB7;
-  text-decoration: none;
-  font-family: "Nunito Sans";
-  font-size: 12px;
-  font-weight: 700;
   line-height: 20px;
   height: 20px;
+  padding: 30px 44px 30px 25px;
 
   .icon {
       margin-right: 20px;
@@ -38,9 +16,16 @@
       height: 20px;
       display: inline-block;
       fill: #C1C8D7;
+      transition: fill 0.3s;
   }
 
- 
-}
+  &:hover {
+    color: #007bff;
+    text-decoration: none;
+    background: linear-gradient(90deg, #E9F3FE 0%, rgba(233, 243, 254, 0.00) 100%);
+    .icon {
+      fill: #007bff;
+  }
+   }
 
 }

@@ -3,12 +3,22 @@
     align-items: center;
     gap: 12px;
     margin: 28px 28px 36px 28px;
+    
 
   
     .avatar {
       width: 36px;
       height: 36px;
       border-radius: 36px;
+      transition: margin-left 0.3s; 
+
+      &.collapsed {
+        margin-left: -10px;
+      }
+
+      
+    
+     
     }
   
     .name {
@@ -16,6 +26,7 @@
         font-size: 14px;
         font-style: normal;
         font-weight: 700;
+        color: #000;
     }
   }
   
