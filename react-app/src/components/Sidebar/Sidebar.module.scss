@@ -11,7 +11,19 @@
 
  
    
-
+  .line {
+    height: 1.5px; 
+    background-color: #D9DDE7; 
+    margin: 0;
+    border:none;
+  }
+  .space {
+    height: 1px; 
+    background-color:transparent; 
+    margin: 10px;
+    border:none;
+  }
+  
 
     .toggleButton {
       position: absolute; 
