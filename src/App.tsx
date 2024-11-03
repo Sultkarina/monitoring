@@ -23,8 +23,8 @@ function App() {
         <Sidebar />
         <div className={styles.mainContent}>
           <Routes>
-            <Route path="/fakecheker" element={<Fakecheker />} />
-            <Route path="/analytics" element={<Analytics />} />
+            <Route path="./fakecheker" element={<Fakecheker />} />
+            <Route path="./analytics" element={<Analytics />} />
             <Route path="/personal-tapes" element={<PersonalTapes />} />
             <Route path="/statistics" element={<Statistics />} />
             <Route path="/technical-indicators" element={<TechnicalIndicators />} />

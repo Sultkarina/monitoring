@@ -9,7 +9,7 @@ import styles from './Profile.module.scss';
   const Profile: React.FC<ProfileProps> = ({ collapsed }) => {
     return (
       <div className={styles.profile}>
-        <img src="/images/profile.svg" alt="Profile" className={`${styles.avatar} ${collapsed ? styles.collapsed : ''}`} />
+        <img src="./images/profile.svg" alt="Profile" className={`${styles.avatar} ${collapsed ? styles.collapsed : ''}`} />
         {!collapsed && <h4 className={styles.name}>Анна Кулешова</h4>} 
       </div>
     );

@@ -6,13 +6,12 @@ interface NavItemProps {
   label: string;
   href: string;
   icon?: string;
-  isActive?: boolean;
   collapsed?: boolean;
 }
 
-const NavItem: React.FC<NavItemProps> = ({ label, href, icon, isActive, collapsed }) => {
+const NavItem: React.FC<NavItemProps> = ({ label, href, icon, collapsed }) => {
   return (
-    <Link to={href} className={`${styles.link} ${isActive ? styles.active : ''}`}>
+    <Link to={href} className={`${styles.link} `}>
       {icon && <img src={icon} alt={`${label} icon`} className={`${styles.icon}`} />}
       {!collapsed && label}
     </Link>
