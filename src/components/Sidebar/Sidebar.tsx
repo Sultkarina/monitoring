@@ -1,24 +1,33 @@
 import React, { useState } from 'react';
 import Profile from './Profile';
 import NavItem from './Navitem';
+import classNames from 'classnames';
 import styles from './Sidebar.module.scss';
 
 const Sidebar: React.FC = () => {
   const [collapsed, setCollapsed] = useState(false);
 
+  const sidebarClass = classNames(styles.sidebar, {
+    [styles.collapsed]: collapsed,
+  });
+
+  const toggleButtonClass = classNames(styles.toggleButton, {
+    [styles.toggleButtonCollapsed]: collapsed,
+  });
+
   return (
-    <div className={`${styles.sidebar} ${collapsed ? styles.collapsed : ''}`}>
+    <div className={sidebarClass}>
       <Profile collapsed={collapsed} />
-      <button onClick={() => setCollapsed(!collapsed)} className={styles.toggleButton}>
+      <button onClick={() => setCollapsed(!collapsed)} className={toggleButtonClass}>
         <img src={collapsed ? './images/arrow-right.svg' : './images/arrow-left.svg'} alt="Toggle sidebar" />
       </button>
       <nav className={styles.nav}>
         <NavItem label="Фейкчекер" href="./fakecheker" icon="./images/fake-checker.svg" collapsed={collapsed} />
-        <hr className={styles.line}></hr>
-        </nav>
-        <hr className={styles.space}></hr>
-        <nav className={styles.nav}>
-        <NavItem label="Аналитика" href="./analytics" icon="./images/analytics.svg" collapsed={collapsed} />
+        <hr className={styles.line} />
+      </nav>
+      <hr className={styles.space} />
+      <nav className={styles.nav}>
+        <NavItem label="Аналитика" href="/analytics" icon="./images/analytics.svg" collapsed={collapsed} />
         <NavItem label="Персональные ленты" href="/personal-tapes" icon="./images/personal-tapes.svg" collapsed={collapsed} />
         <NavItem label="Статистика" href="/statistics" icon="./images/statistics.svg" collapsed={collapsed} />
         <NavItem label="Тех. показатели" href="/technical-indicators" icon="./images/technical-indicators.svg" collapsed={collapsed} />
