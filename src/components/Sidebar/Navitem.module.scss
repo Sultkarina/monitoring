@@ -1,33 +1,29 @@
 .link {
   display: flex;
   align-items: center;
-  color: #949FB7;
+  color: #949fb7;
   text-decoration: none;
   font-family: "Nunito Sans";
   font-size: 12px;
   font-weight: 700;
   line-height: 20px;
   height: 20px;
-  padding: 30px 44px 30px 25px;
+  padding: 30px 25px;
+  transition: padding 0.3s;
+  gap: 25px;
 
-  
-  .icon {
-      margin-right: 20px;
-      width: 20px;
-      height: 20px;
-      display: inline-block;
-      transition: fill 0.3s;
-  }
-
- 
   &:hover {
     color: #007bff;
     text-decoration: none;
-    background: linear-gradient(90deg, #E9F3FE 0%, rgba(233, 243, 254, 0.00) 100%);
-    border-left: 3px solid  #1D84EF;
-    
+    border-left: 2px solid #1d84ef;
+    fill: #007bff;
+    gap: 20px;
+  }
+}
 
-    
-   }
-
+.icon {
+  width: 20px;
+  height: 20px;
+  transition: fill 0.3s;
+  fill: #949fb7;
 }

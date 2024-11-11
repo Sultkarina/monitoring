@@ -1,54 +1,48 @@
 .sidebar {
-  position: relative; 
+  position: relative;
   width: 200px;
   transition: width 0.3s;
-  background-color: #F8F8FB;
-  
+  background-color: #f8f8fb;
 
   &.collapsed {
-      width: 70px;
+    width: 70px;
   }
 
- 
-   
   .line {
-    height: 1.5px; 
-    background-color: #D9DDE7; 
+    height: 1.5px;
+    background-color: #d9dde7;
     margin: 0;
-    border:none;
+    border: none;
   }
   .space {
-    height: 1px; 
-    background-color:transparent; 
+    height: 1px;
+    background-color: transparent;
     margin: 10px;
-    border:none;
+    border: none;
   }
-  
 
-    .toggleButton {
-      position: absolute; 
-      top: 80px;
-      right: -13px; 
-      border-radius: 20px;
-      width: 26px;
-      height: 26px;
-      background: #1D84EF;
-      border: none;
-      padding: 0px;
-      outline: none;
-      cursor: pointer; 
-  
-      img {
-          width: 100%; 
-          height: auto; 
-      }
+  .toggleButton {
+    position: absolute;
+    top: 80px;
+    right: -13px;
+    border-radius: 20px;
+    width: 26px;
+    height: 26px;
+    background: #1d84ef;
+    border: none;
+    padding: 0px;
+    outline: none;
+    cursor: pointer;
+
+    img {
+      width: 100%;
+      height: auto;
+    }
   }
-      .nav {
-      display: flex;
-      flex-direction: column;
-      gap:0px;
-      }
-    
-    
-  
+  .nav {
+    display: flex;
+    flex-direction: column;
+    gap: 0px;
+    justify-content: flex-start;
+  }
 }

@@ -3,7 +3,7 @@ import classNames from 'classnames';
 import styles from './Profile.module.scss';
 
 interface ProfileProps {
-  collapsed?: boolean; 
+  collapsed?: boolean;
 }
 
 const Profile: React.FC<ProfileProps> = ({ collapsed }) => {
