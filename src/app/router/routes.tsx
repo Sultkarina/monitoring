@@ -1,42 +1,37 @@
 import { type RouteObject } from 'react-router-dom';
-import Sidebar from '../../components/Sidebar/Sidebar';  
-
-
-
-const Analytics = () => <div>Аналитика</div>;
-const Fakecheker = () => <div>Фейкчекер</div>;
-const PersonalTapes = () => <div>Персональные ленты</div>;
-const Statistics = () => <div>Статистика</div>;
-const TechnicalIndicators = () => <div>Тех. показатели</div>;
-const Anomalies = () => <div>Аномалии</div>;
-const PersonsList = () => <div>Список персон</div>;
-const Reports = () => <div>Отчеты</div>;
-const Settings = () => <div>Настройки</div>;
-const NotificationSettings = () => <div>Настройки уведомлений</div>;
-const Transcriptions = () => <div>Транскрибации</div>;
-const FolderManagement = () => <div>Управление папками</div>;
-const Sources = () => <div>Источники</div>;
+import AnalyticsPage from '../../pages/AnalyticsPage';
+import PersonalTapesPage from '../../pages/PersonalTapesPage';
+import FakechekerPage from '../../pages/FakechekerPage';
+import StatisticsPage from '../../pages/StatisticsPage';
+import TechnicalIndicatorsPage from '../../pages/TechnicalIndicatorsPage';
+import AnomaliesPage from '../../pages/AnomaliesPage';
+import PersonsListPage from '../../pages/PersonsListPage';
+import ReportsPage from '../../pages/ReportsPage';
+import SettingsPage from '../../pages/SettingsPage';
+import NotificationSettingsPage from '../../pages/NotificationSettingsPage';
+import TranscriptionsPage from '../../pages/TranscriptionsPage';
+import FolderManagementPage from '../../pages/FolderManagementPage';
+import SourcesPage from '../../pages/SourcesPage';
+import RootLayout from '../../layouts/RootLayout';
 
 export const routes: RouteObject[] = [
   {
     path: '/',
-    element: <div style={{ display: 'flex' }}>
-    <Sidebar /> 
-  </div>,
+    element: <RootLayout />,
     children: [
-      { path: 'fakecheker', element: <Fakecheker /> },
-      { path: 'analytics', element: <Analytics /> },
-      { path: 'personal-tapes', element: <PersonalTapes /> },
-      { path: 'statistics', element: <Statistics /> },
-      { path: 'technical-indicators', element: <TechnicalIndicators /> },
-      { path: 'anomalies', element: <Anomalies /> },
-      { path: 'persons', element: <PersonsList /> },
-      { path: 'reports', element: <Reports /> },
-      { path: 'settings', element: <Settings /> },
-      { path: 'notification-settings', element: <NotificationSettings /> },
-      { path: 'transcriptions', element: <Transcriptions /> },
-      { path: 'folder-management', element: <FolderManagement /> },
-      { path: 'sources', element: <Sources /> },
+      { path: 'fakecheker', element: <FakechekerPage /> },
+      { path: 'analytics', element: <AnalyticsPage /> },
+      { path: 'personal-tapes', element: <PersonalTapesPage /> },
+      { path: 'statistics', element: <StatisticsPage /> },
+      { path: 'technical-indicators', element: <TechnicalIndicatorsPage /> },
+      { path: 'anomalies', element: <AnomaliesPage /> },
+      { path: 'persons', element: <PersonsListPage /> },
+      { path: 'reports', element: <ReportsPage /> },
+      { path: 'settings', element: <SettingsPage /> },
+      { path: 'notification-settings', element: <NotificationSettingsPage /> },
+      { path: 'transcriptions', element: <TranscriptionsPage /> },
+      { path: 'folder-management', element: <FolderManagementPage /> },
+      { path: 'sources', element: <SourcesPage /> },
     ],
   },
 ];
