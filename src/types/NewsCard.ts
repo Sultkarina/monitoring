@@ -12,6 +12,7 @@ export interface NewsCard {
   audioTag?: string; // Тэг аудио
   isNew?: boolean; // Новый тип для статуса карточки 
   statusLabel:string;
+  
 }
 
 export interface NewsCardStats {
@@ -51,6 +52,8 @@ export interface Column {
   id: string; // Идентификатор колонки
   cards: NewsCard[]; // Карточки
   isPinned?: boolean; // Закреплена ли колонка
+  title:string;
+  count:number;
 }
 
 

@@ -1,0 +1,65 @@
+// Цвета
+$color-background: #f8f8fb;
+$color-text: #454648;
+$color-primary: #032887;
+$color-hover: #e9f3fe;
+$color-icon: #949fb7;
+$color-icon-hover: #032887;
+$color-count-background: #032887;
+$color-scroll-thumb: #C1C8D7;
+$color-scroll-thumb-hover: #a1a1a1;
+$color-menu-background: #fff;
+$color-shadow: rgba(150, 154, 163, 0.25);
+$color-author:#596172;
+
+// Цвета для кнопок и UI-элементов
+$color-button-background: #1d84ef;
+$color-button-text: #fff;
+$color-button-hover: #155b8c;
+$color-border: #d9dde7;
+$color-border-button:#2052D4;
+$color-border-hover: #1d84ef;
+$color-error: #e53e3e;
+$color-success: #38a169;
+$color-warning: #d69e2e;
+
+// Шрифты
+$font-family: "Nunito Sans";
+$font-heading: "Nunito Sans", sans-serif;
+$font-body: "Roboto", sans-serif;
+$font-size-small: 12px;
+$font-size-medium: 16px;
+$font-size-large: 18px;
+$font-size-xlarge: 24px;
+$font-size-xxlarge: 32px;
+$font-weight-bold: 700;
+$font-weight-normal: 400;
+$font-weight-medium: 600;
+$line-height: 130%;
+
+// Размеры
+$border-radius: 12px;
+$gap-small: 4px;
+$gap-medium: 8px;
+$gap-large: 12px;
+$padding-small: 4px;
+$padding-medium: 8px;
+$padding-large: 12px;
+$max-height-cards: calc(100vh - 200px);
+$scrollbar-width: 6px;
+$padding-xsmall: 4px;
+$padding-large: 16px;
+$margin-small: 8px;
+$margin-medium: 16px;
+$margin-large: 20px;
+$margin-bottom:12px;
+
+// Тени
+$box-shadow-light: 0px 4px 10px rgba(0, 0, 0, 0.1);
+$box-shadow-medium: 0px 8px 20px rgba(0, 0, 0, 0.2);
+$box-shadow-dark: 0px 12px 30px rgba(0, 0, 0, 0.3);
+
+// Прокрутка
+$scrollbar-bg: #f0f0f0;
+$scrollbar-thumb: #c1c8d7;
+$scrollbar-thumb-hover: #a1a1a1;

@@ -1,0 +1,20 @@
+@use "../../styles/variables" as *;
+
+.cardStats {
+  display: flex;
+  gap: 12px;
+  font-size: 14px;
+  color: $color-icon;
+
+  &__iconWrapper {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+  }
+
+  &__icon {
+    width: 20px;
+    height: 20px;
+    fill: currentColor;
+  }
+}

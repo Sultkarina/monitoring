@@ -1,0 +1,27 @@
+@use "../../styles/variables" as *;
+
+.icon {
+  font-size: $font-size-xlarge;
+  cursor: pointer;
+}
+
+.vk {
+  color: #4680c2;
+}
+
+.instagram {
+  background: linear-gradient(45deg, #fdcb82, #d6249f, #833ab4);
+  color: white;
+}
+
+.discord {
+  color: #7289da;
+}
+
+.facebook {
+  color: #1877f2;
+}
+
+.twitter {
+  color: #1da1f2;
+}

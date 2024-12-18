@@ -1,3 +1,4 @@
+@use "../../styles/variables" as *;
 header {
     display: flex;
     flex-direction: column;
@@ -8,13 +9,13 @@ header {
 
 h1 {
     margin: 0;
-    color: #596172;
+    color: $color-author;
     text-transform: uppercase;
-    font-family: "Nunito Sans";
-    font-size: 24px;
+    font-family: $font-family;
+    font-size: $font-size-xlarge;
     font-style: normal;
-    font-weight: 700;
-    line-height: 130%;
+    font-weight: $font-weight-bold;
+    line-height: $line-height;
 
 }
 

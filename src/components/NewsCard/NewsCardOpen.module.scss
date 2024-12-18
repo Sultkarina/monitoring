@@ -1,0 +1,210 @@
+@use "../../styles/variables" as *;
+
+.cardOpen {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 516px;
+  height: 100%;
+  background-color: $color-menu-background;
+  box-shadow: -4px 0px 20px $color-shadow;
+  z-index: 1000;
+  transition: transform 0.3s ease-in-out;
+  padding-left: 40px;
+  padding-right: 40px;
+  padding-top: 32px;
+  padding-bottom: 40px;
+
+  &__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 20px;
+  }
+
+  &__title {
+    color: $color-author;
+    font-family: $font-family;
+    font-size: 20px;
+    font-weight: $font-weight-bold;
+    line-height: $line-height;
+    text-transform: uppercase;
+  }
+
+  &__icon {
+    width: 20px;
+    height: 20px;
+    fill: currentColor;
+  }
+
+  &__closeButton {
+    display: flex;
+    padding: $padding-medium;
+    justify-content: center;
+    align-items: center;
+    gap: $gap-small;
+    border-radius: 4px;
+    border: 1px solid $color-icon;
+    background: $color-menu-background;
+  }
+
+  &__separator {
+    width: calc(100% + 80px);
+    margin-left: -40px;
+    margin-right: -40px;
+    border: 0;
+    border-top: 1px solid $color-border;
+    margin-top: $margin-bottom;
+    margin-bottom: $margin-bottom;
+    &__small {
+      width: 100%;
+    }
+  }
+
+  &__infoRow {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: $margin-medium;
+  }
+
+  &__status {
+    border-radius: 4px;
+    padding: $gap-small $gap-large;
+    background: $color-button-background;
+    color: $color-button-text;
+    font-family: $font-family;
+    font-size: $font-size-small;
+    font-weight: $font-weight-bold;
+    line-height: $line-height;
+    text-align: center;
+  }
+
+  &__location {
+    font-size: $font-size-small;
+    color: #666;
+    margin-bottom: $margin-small;
+    display: flex;
+    align-items: center;
+    gap: $gap-small;
+    margin-bottom: $margin-bottom;
+    margin-top: $margin-bottom;
+  }
+
+  &__stats {
+    display: flex;
+    gap: $gap-large;
+    font-size: $font-size-small;
+    color: #596172;
+    font-family: $font-family;
+    font-style: normal;
+    font-weight: $font-weight-normal;
+    line-height: $line-height;
+    margin-bottom: $margin-large;
+  }
+
+  &__content {
+    color: $color-text;
+    font-family: $font-family;
+    font-size: $font-size-medium;
+    font-weight: $font-weight-normal;
+    line-height: $line-height;
+    margin-top: $margin-medium;
+    margin-bottom: $margin-medium;
+  }
+
+  &__audioSection {
+    display: flex;
+    align-items: center;
+    gap: $gap-large;
+    margin-bottom: $margin-medium;
+  }
+
+  &__audioDuration {
+    display: flex;
+    color: $color-icon;
+    font-family: $font-family;
+    font-size: $font-size-medium;
+    font-weight: $font-weight-bold;
+    line-height: $line-height;
+    color: $color-icon;
+  }
+
+  &__tagAndFlag {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: $gap-small;
+    width: 100%;
+  }
+
+  &__flagIcon {
+    width: 16px;
+    height: 16px;
+    fill: currentColor;
+    margin-left: auto;
+  }
+
+  &__hideDuplicatesButton {
+    display: flex;
+    padding: $padding-medium $padding-large $padding-medium $padding-medium;
+    justify-content: center;
+    align-items: center;
+    gap: $gap-small;
+    border-radius: 4px;
+    cursor: pointer;
+    color: $color-border-hover;
+    font-family: $font-family;
+    font-size: $font-size-medium;
+    font-weight: $font-weight-bold;
+    line-height: $line-height;
+    border: 1px solid $color-border-hover;
+    background: $color-menu-background;
+  }
+  &__userInfo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    width: 100%;
+    margin-bottom: 62px;
+  }
+
+  &__fakeChecker {
+    color: $color-icon;
+    width: 24px;
+    height: 24px;
+    margin-left: auto;
+  }
+  &__audioButton {
+    color: $color-icon;
+    width: 32px;
+    height: 32px;
+  }
+
+  &__authorDetails {
+    display: flex;
+    flex-direction: column;
+    gap: $gap-small;
+  }
+
+  &__authorName {
+    color: $color-author;
+    font-family: $font-family;
+    font-size: $font-size-small;
+    font-weight: $font-weight-medium;
+    line-height: $line-height;
+  }
+
+  &__authorDate {
+    font-size: $font-size-small;
+    font-weight: $font-weight-normal;
+    color: $color-author;
+    font-family: $font-family;
+    line-height: $line-height;
+  }
+}
+
+button {
+  border: none;
+  background: none;
+}

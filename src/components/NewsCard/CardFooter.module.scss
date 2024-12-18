@@ -1,0 +1,102 @@
+@use "../../styles/variables" as *;
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 40px;
+
+  &__action {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 12px;
+  }
+
+  &__actionButton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: $color-button-background;
+    color: $color-button-text;
+    border: none;
+    border-radius: 4px;
+    font-family: $font-family;
+    font-size: $font-size-medium;
+    cursor: pointer;
+    gap: 4px;
+    padding: $padding-medium $padding-medium $padding-medium $padding-large;
+
+    &:hover {
+      background-color: $color-button-hover;
+    }
+  }
+
+  &__editButton,
+  &__deleteButton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: $color-menu-background;
+    border: 1px solid $color-icon;
+    border-radius: 4px;
+    padding: $padding-medium;
+    cursor: pointer;
+
+    &:hover {
+      border-color: $color-icon-hover;
+    }
+  }
+
+  &__pagination {
+    display: flex;
+    width: 129px;
+    padding: $padding-medium $padding-medium $padding-medium $padding-large;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 8px;
+    background: $color-hover;
+
+    span {
+      color: $color-button-background;
+      font-family: $font-family;
+      font-size: 14px;
+      font-style: normal;
+      font-weight: $font-weight-medium;
+      line-height: $line-height;
+    }
+  }
+
+  &__paginationContainer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__paginationButton {
+    display: flex;
+    background: none;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: $color-button-background;
+    gap: 8px;
+
+    &:hover {
+      fill: currentColor;
+    }
+
+    &:disabled {
+      cursor: not-allowed;
+      opacity: 0.5;
+    }
+  }
+
+  &__icon {
+    width: 20px;
+    height: 20px;
+    fill: currentColor;
+  }
+}

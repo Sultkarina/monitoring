@@ -40,6 +40,7 @@ const Sidebar: React.FC = () => {
         <NavItem label="Управление папками" href="/folder-management" icon="folder" collapsed={collapsed} />
         <NavItem label="Источники" href="/sources" icon="sources" collapsed={collapsed} />
       </nav>
+      <div className={styles.space2}></div>
     </div>
   );
 };
